@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "project_folder": "/Users/joshuadavis/startups/childdevos",
+  "startup_name": "ChildDevOS",
+  "last_updated": "2026-05-11T00:38:00-07:00",
+  "status": "ready",
+  "build_status": {
+    "pnpm_install": "pass",
+    "lint": "pass",
+    "typecheck": "not_run_no_script",
+    "build": "pass",
+    "last_error": ""
+  },
+  "deploy_status": {
+    "vercel_ready": true,
+    "last_deployed": "",
+    "deployment_url": "",
+    "manual_deploy_command": "cd /Users/joshuadavis/startups/childdevos && pnpm install && pnpm build && vercel --prod"
+  },
+  "disk_status": {
+    "size_before": "563M",
+    "size_after": "364K",
+    "cleanup_performed": true,
+    "large_files_flagged": [
+      "./node_modules/.pnpm/@next+swc-darwin-arm64@16.2.3/node_modules/@next/swc-darwin-arm64/next-swc.darwin-arm64.node"
+    ]
+  },
+  "recent_changes": [
+    "Added components/premium/setup-card.tsx for graceful Supabase setup states.",
+    "Upgraded components/premium/background.tsx with animated aurora and glow system.",
+    "Removed stale app/api/checkout/route.ts and empty lib/supabase.ts.",
+    "Hardened API typing by removing explicit any usage.",
+    "Updated next.config.ts with turbopack root to local project."
+  ],
+  "open_issues": [
+    "Production role-based auth not implemented yet.",
+    "RLS policies remain permissive MVP/demo policies."
+  ],
+  "next_actions": [
+    "Implement role-based Supabase auth.",
+    "Replace demo RLS with production tenant + role policies.",
+    "Add weekly/monthly/quarterly/yearly report views."
+  ],
+  "last_agent_notes": "Recovery pass complete: lint/build successful before cleanup, generated artifacts removed, and docs/foundation files refreshed for durable continuation."
+}

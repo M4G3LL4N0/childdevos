@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "startup_name": "ChildDevOS",
+  "project_folder": "/Users/joshuadavis/startups/childdevos",
+  "tasks": [
+    {
+      "id": "task-001",
+      "priority": "high",
+      "track": "engineering",
+      "title": "Harden Supabase env and schema setup states",
+      "status": "in_progress"
+    },
+    {
+      "id": "task-002",
+      "priority": "high",
+      "track": "product",
+      "title": "Add role-based Supabase Auth",
+      "status": "todo"
+    },
+    {
+      "id": "task-003",
+      "priority": "high",
+      "track": "data",
+      "title": "Replace demo RLS with production tenant policies",
+      "status": "todo"
+    },
+    {
+      "id": "task-004",
+      "priority": "medium",
+      "track": "product",
+      "title": "Add child selector and parent relationship permissions",
+      "status": "todo"
+    },
+    {
+      "id": "task-005",
+      "priority": "medium",
+      "track": "ai",
+      "title": "Add server-side AI report generation with provider env guard",
+      "status": "todo"
+    },
+    {
+      "id": "task-006",
+      "priority": "medium",
+      "track": "product",
+      "title": "Add weekly/monthly/quarterly/yearly report views",
+      "status": "todo"
+    },
+    {
+      "id": "task-007",
+      "priority": "medium",
+      "track": "design",
+      "title": "Polish dashboard mobile responsiveness",
+      "status": "todo"
+    },
+    {
+      "id": "task-008",
+      "priority": "low",
+      "track": "growth",
+      "title": "Add SEO metadata and childcare landing copy variants",
+      "status": "todo"
+    },
+    {
+      "id": "task-009",
+      "priority": "low",
+      "track": "cleanup",
+      "title": "Continue large-file and dependency audit",
+      "status": "todo"
+    }
+  ]
+}

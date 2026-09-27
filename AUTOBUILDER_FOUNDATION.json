@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0",
+  "project_folder": "/Users/joshuadavis/startups/childdevos",
+  "startup_name": "ChildDevOS",
+  "aliases": ["Child Development OS", "Childcare Intelligence Platform"],
+  "domain": "",
+  "category": "childcare SaaS / edtech / developmental intelligence",
+  "stage": "mvp",
+  "one_line_description": "AI operating system for childcare centers that turns classroom activity into parent reports and longitudinal child development intelligence.",
+  "target_users": ["childcare centers", "preschools", "daycare providers", "teachers", "childcare administrators", "parents"],
+  "core_problem": "Childcare centers rely on fragmented manual reporting, and parents lack meaningful visibility into their child's daily learning, mood, behavior, and development.",
+  "core_solution": "A schema-based platform where teachers log observations and ChildDevOS turns them into structured reports and child development intelligence.",
+  "differentiation": "Combines childcare operations, parent communication, and longitudinal child development intelligence rather than basic messaging or attendance tracking.",
+  "mvp_scope": {
+    "primary_goal": "Demo a premium childcare intelligence platform with teacher logging, parent daily reports, and Supabase-backed data structure.",
+    "included_features": ["premium homepage", "teacher observation logging", "parent daily report dashboard", "Supabase childdevos schema", "daily report generation", "health check route"],
+    "excluded_for_now": ["real production auth", "billing", "real AI provider integration", "mobile app", "strict production RLS", "medical diagnosis"],
+    "future_features": ["role-based auth", "weekly reports", "monthly reports", "quarterly reports", "yearly reports", "AI report generation", "multi-center admin", "parent permissions", "media uploads"]
+  },
+  "website": {
+    "primary_message": "One system for childhood development.",
+    "tone": "premium, trustworthy, warm, investor-ready, operationally serious",
+    "routes": ["/", "/dashboard/teacher", "/dashboard/parent", "/api/teacher/log", "/api/reports/daily", "/api/health"],
+    "sections": ["hero", "problem", "solution", "how it works", "platform cards", "dashboard CTAs", "roadmap", "footer"],
+    "cta": "Open teacher dashboard / Open parent dashboard",
+    "seo_keywords": ["childcare software", "daycare reporting", "parent communication", "child development tracking", "preschool management software", "AI childcare platform"]
+  },
+  "product": {
+    "core_flows": ["teacher logs observation", "system stores observation", "parent views daily report", "system summarizes happiness and learning tags"],
+    "demo_flows": ["homepage to teacher dashboard", "log observation", "open parent dashboard", "view generated daily report"],
+    "data_model_notes": ["uses Supabase schema childdevos", "centers/classrooms/children/observations/daily_reports", "production RLS must be hardened before real childcare data"],
+    "auth_required": false,
+    "database_required": true,
+    "api_required": true
+  },
+  "design_system": {
+    "visual_style": "dark cinematic Noaerth-tier glassmorphism with radial gradients, glow cards, motion, hover depth, and premium venture-grade layout",
+    "colors": ["deep navy", "black", "cyan", "orange", "fuchsia", "emerald", "white glass"],
+    "typography": "large confident modern headings, readable warm body copy",
+    "layout_principles": ["responsive", "high contrast", "clear CTAs", "premium cards", "section hierarchy", "no clutter"],
+    "animation_style": "subtle aurora motion, fade-in, hover lift, parallax-style glow layers",
+    "avoid": ["generic SaaS template", "cartoonish daycare look", "white-on-white buttons", "overpromising medical claims", "public automation exposure"]
+  },
+  "technical_stack": {
+    "framework": "Next.js",
+    "language": "TypeScript",
+    "styling": "Tailwind CSS",
+    "package_manager": "pnpm",
+    "deployment": "Vercel",
+    "database": "Supabase Postgres schema childdevos",
+    "auth": "future Supabase Auth",
+    "apis": ["Supabase", "future AI report API"]
+  },
+  "important_files": {
+    "routes": ["app/page.tsx", "app/dashboard/teacher/page.tsx", "app/dashboard/parent/page.tsx", "app/api/teacher/log/route.ts", "app/api/reports/daily/route.ts", "app/api/health/route.ts"],
+    "components": ["components/premium/background.tsx", "components/premium/hero.tsx", "components/premium/glow-card.tsx", "components/premium/venture-card.tsx", "components/shell.tsx"],
+    "lib": ["lib/env.ts", "lib/supabase-server.ts", "lib/supabase-browser.ts", "lib/types.ts", "lib/utils.ts"],
+    "data": ["supabase/childdevos_schema.sql"],
+    "public_assets": [],
+    "config": ["package.json", "pnpm-lock.yaml", "next.config.ts", "tsconfig.json", "postcss.config.mjs", ".env.example", ".gitignore"]
+  },
+  "preserve": {
+    "copy": ["One system for childhood development.", "operating system for childhood development", "structured developmental intelligence"],
+    "features": ["teacher logging", "parent daily reports", "Supabase schema", "premium landing page"],
+    "components": ["premium background", "hero", "glow cards", "dashboard pages"],
+    "assets": [],
+    "technical_decisions": ["pnpm only", "schema-based Supabase", "manual Vercel deploy only"]
+  },
+  "do_not": {
+    "delete": ["supabase/childdevos_schema.sql", "app/dashboard/teacher", "app/dashboard/parent", "lib/supabase-server.ts", "lib/env.ts", "AUTOBUILDER_FOUNDATION.json", ".autobuilder"],
+    "expose_publicly": ["Autobuilder internals", "private founder context", "API keys", "Supabase keys beyond public anon env pattern", "claims of medical diagnosis"],
+    "change_without_reason": ["schema name childdevos", "package manager pnpm", "core positioning", "dashboard routes"],
+    "build": ["automatic deployment", "GitHub push automation", "medical diagnosis engine", "surveillance language"],
+    "drift_toward": ["generic CRM", "generic school template", "random Noaerth portfolio clone", "unrelated startup concepts"]
+  },
+  "autobuilder_strategy": {
+    "north_star": "Make ChildDevOS the premium operating system for childcare reporting and developmental intelligence.",
+    "quality_bar": "Investor-ready visuals, clean build, schema-backed product flows, no generic filler.",
+    "next_priorities": ["harden env/build behavior", "role-based auth", "RLS policies", "real AI report generation", "weekly/monthly reports"],
+    "safe_improvement_types": ["UI polish", "copy clarity", "schema-safe dashboard improvements", "accessibility", "SEO", "docs", "small build fixes"],
+    "unsafe_improvement_types": ["deleting schema", "rewriting into unrelated product", "auto-deploying", "adding invasive claims", "using npm"],
+    "preferred_task_size": "medium",
+    "build_frequency_guidance": "Run pnpm build after meaningful code changes and before cleanup.",
+    "deployment_guidance": "manual_vercel_only"
+  },
+  "cleanup_policy": {
+    "safe_to_delete": ["node_modules", ".next", ".turbo", ".vercel/cache", "dist", "build", "coverage", "playwright-report", "test-results", ".cache", ".parcel-cache", "*.log", ".DS_Store", "package-lock.json if pnpm-lock.yaml exists"],
+    "must_preserve": ["app", "components", "lib", "supabase", "public used assets", "package.json", "pnpm-lock.yaml", ".env.example", ".env.local", "README.md", "RECOVERY_NOTES.md", "AUTOBUILDER_FOUNDATION.json", ".autobuilder", ".gitignore"],
+    "large_file_review_paths": ["public", "assets", "media", "content", "data", "docs", ".autobuilder"],
+    "post_build_cleanup_commands": ["rm -rf node_modules .next .turbo .vercel/cache dist build coverage playwright-report test-results .cache .parcel-cache", "find . -name '.DS_Store' -type f -delete", "find . -name '*.log' -type f -delete"]
+  },
+  "last_recovery_summary": {
+    "date": "2026-05-11",
+    "restored": ["dashboard setup component for missing env state", "premium background animation layers"],
+    "improved": ["README setup flow and manual deploy instructions", ".gitignore hygiene", "next turbopack root stability"],
+    "fixed": ["lint explicit-any errors", "dashboard missing import target", "stale route/file artifacts"],
+    "removed": ["app/api/checkout/route.ts", "lib/supabase.ts", "root file named {", "generated build/cache folders"],
+    "remaining_risks": ["MVP/demo RLS is permissive and must be hardened for production childcare data", "no role-based auth enforcement yet"]
+  }
+}
